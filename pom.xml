@@ -14,7 +14,7 @@
 	<name>personapi</name>
 	<description>Perso API Project</description>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>11git</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
