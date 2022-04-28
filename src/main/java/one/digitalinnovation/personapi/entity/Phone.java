@@ -1,12 +1,11 @@
 package one.digitalinnovation.personapi.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import one.digitalinnovation.personapi.enums.PhoneType;
+import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Data
