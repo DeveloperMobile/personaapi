@@ -38,6 +38,11 @@ public class PersonService {
         return PersonMapper.INSTANCE.toDTO(person);
     }
 
+    public void delete(Long id) throws PersonNotFoundException {
+        verifyIfExists(id);
+        rep.deleteById(id);
+    }
+
     private Person verifyIfExists(Long id) throws PersonNotFoundException {
         return rep.findById(id)
                 .orElseThrow(() -> new PersonNotFoundException(id));
